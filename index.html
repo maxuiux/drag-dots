@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="DRAG-DOTS - CSS Toolkit Position Dots">
+	<meta name="keywords" content="maxuiux, css, drag, dots, toolkit">
+	<meta name="author" content="maxuiux">
+	
+	<link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+	<link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
+	<link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="css/style.min.css">
+	
+	<title>DRAG-DOTS - CSS Position Dots</title>
+</head>
+
+<body>
+
+	<header class="header">
+
+    <div class="header__inner">
+        <a class="logo" href="https://maxuiux.github.io/portfolio/" tabindex="1" title="© maxuiux">
+            <svg>
+                <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+        </a>
+        <a class="brand" href="/" tabindex="2" title="© copyright maxuiux drag-dots">
+            <svg>
+                <use xlink:href="img/sprite.svg#logo-drag-dots2"></use>
+            </svg>
+        </a>
+        <a class="boosty" href="https://boosty.to/maxuiux" tabindex="3" title="Support Project">
+            <img src="img/sprite.svg#boosty-logo" alt="">
+        </a>
+    </div>
+
+</header>
+	
+	<section class="section-drag">
+    <div class="section-drag__wrap">
+
+        <div class="section-drag__block">
+            <div class="section-drag-img-manager">
+                <form class="section-drag-img-manager__form">
+                    <input class="" type="text" id="imageUrl" placeholder="Image URL http://..." tabindex="4">
+                    <button class="button" type="button" id="applyImage" tabindex="5">
+                        Apply Image
+                    </button>
+                </form>
+
+                <div id="dropArea" class="section-drag-img-manager__drop-area drop-area">
+                    <label id="largeFile" for="fileInput" tabindex="6">
+                        <input type="file" id="fileInput" accept="image/*">
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-drag__block">
+            <div class="dropdown">
+                <button class="button dropdown__btn" tabindex="7">
+                    Select a number dot
+                </button>
+                <ul class="dropdown__list">
+                    <button onclick="selectNumber(1)">1 Dot</button><button onclick="selectNumber(2)">2
+                        Dot</button><button onclick="selectNumber(3)">3 Dot</button><button onclick="selectNumber(4)">4
+                        Dot</button><button onclick="selectNumber(5)">5 Dot</button><button onclick="selectNumber(6)">6
+                        Dot</button><button onclick="selectNumber(7)">7 Dot</button><button onclick="selectNumber(8)">8
+                        Dot</button><button onclick="selectNumber(9)">9 Dot</button><button
+                        onclick="selectNumber(10)">10 Dot</button><button onclick="selectNumber(11)">11
+                        Dot</button><button onclick="selectNumber(12)">12 Dot</button><button
+                        onclick="selectNumber(13)">13 Dot</button><button onclick="selectNumber(14)">14
+                        Dot</button><button onclick="selectNumber(15)">15 Dot</button><button
+                        onclick="selectNumber(16)">16 Dot</button><button onclick="selectNumber(17)">17
+                        Dot</button><button onclick="selectNumber(18)">18 Dot</button><button
+                        onclick="selectNumber(19)">19 Dot</button><button onclick="selectNumber(20)">20
+                        Dot</button><button onclick="selectNumber(21)">21 Dot</button><button
+                        onclick="selectNumber(22)">22 Dot</button><button onclick="selectNumber(23)">23
+                        Dot</button><button onclick="selectNumber(24)">24 Dot</button><button
+                        onclick="selectNumber(25)">25 Dot</button><button onclick="selectNumber(26)">26
+                        Dot</button><button onclick="selectNumber(27)">27 Dot</button><button
+                        onclick="selectNumber(28)">28 Dot</button><button onclick="selectNumber(29)">29
+                        Dot</button><button onclick="selectNumber(30)">30 Dot</button><button
+                        onclick="selectNumber(31)">31 Dot</button><button onclick="selectNumber(32)">32
+                        Dot</button><button onclick="selectNumber(33)">33 Dot</button><button
+                        onclick="selectNumber(34)">34 Dot</button><button onclick="selectNumber(35)">35
+                        Dot</button><button onclick="selectNumber(36)">36 Dot</button><button
+                        onclick="selectNumber(37)">37 Dot</button><button onclick="selectNumber(38)">38
+                        Dot</button><button onclick="selectNumber(39)">39 Dot</button><button
+                        onclick="selectNumber(40)">40 Dot</button><button onclick="selectNumber(41)">41
+                        Dot</button><button onclick="selectNumber(42)">42 Dot</button><button
+                        onclick="selectNumber(43)">43 Dot</button><button onclick="selectNumber(44)">44
+                        Dot</button><button onclick="selectNumber(45)">45 Dot</button><button
+                        onclick="selectNumber(46)">46 Dot</button><button onclick="selectNumber(47)">47
+                        Dot</button><button onclick="selectNumber(48)">48 Dot</button><button
+                        onclick="selectNumber(49)">49 Dot</button><button onclick="selectNumber(50)">50
+                        Dot</button><button onclick="selectNumber(51)">51 Dot</button><button
+                        onclick="selectNumber(52)">52 Dot</button><button onclick="selectNumber(53)">53
+                        Dot</button><button onclick="selectNumber(54)">54 Dot</button><button
+                        onclick="selectNumber(55)">55 Dot</button><button onclick="selectNumber(56)">56
+                        Dot</button><button onclick="selectNumber(57)">57 Dot</button><button
+                        onclick="selectNumber(58)">58 Dot</button><button onclick="selectNumber(59)">59
+                        Dot</button><button onclick="selectNumber(60)">60 Dot</button><button
+                        onclick="selectNumber(61)">61 Dot</button><button onclick="selectNumber(62)">62
+                        Dot</button><button onclick="selectNumber(63)">63 Dot</button><button
+                        onclick="selectNumber(64)">64 Dot</button><button onclick="selectNumber(65)">65
+                        Dot</button><button onclick="selectNumber(66)">66 Dot</button><button
+                        onclick="selectNumber(67)">67 Dot</button><button onclick="selectNumber(68)">68
+                        Dot</button><button onclick="selectNumber(69)">69 Dot</button><button
+                        onclick="selectNumber(70)">70 Dot</button><button onclick="selectNumber(71)">71
+                        Dot</button><button onclick="selectNumber(72)">72 Dot</button><button
+                        onclick="selectNumber(73)">73 Dot</button><button onclick="selectNumber(74)">74
+                        Dot</button><button onclick="selectNumber(75)">75 Dot</button><button
+                        onclick="selectNumber(76)">76 Dot</button><button onclick="selectNumber(77)">77
+                        Dot</button><button onclick="selectNumber(78)">78 Dot</button><button
+                        onclick="selectNumber(79)">79 Dot</button><button onclick="selectNumber(80)">80
+                        Dot</button><button onclick="selectNumber(81)">81 Dot</button><button
+                        onclick="selectNumber(82)">82 Dot</button><button onclick="selectNumber(83)">83
+                        Dot</button><button onclick="selectNumber(84)">84 Dot</button><button
+                        onclick="selectNumber(85)">85 Dot</button><button onclick="selectNumber(86)">86
+                        Dot</button><button onclick="selectNumber(87)">87 Dot</button><button
+                        onclick="selectNumber(88)">88 Dot</button><button onclick="selectNumber(89)">89
+                        Dot</button><button onclick="selectNumber(90)">90 Dot</button><button
+                        onclick="selectNumber(91)">91 Dot</button><button onclick="selectNumber(92)">92
+                        Dot</button><button onclick="selectNumber(93)">93 Dot</button><button
+                        onclick="selectNumber(94)">94 Dot</button><button onclick="selectNumber(95)">95
+                        Dot</button><button onclick="selectNumber(96)">96 Dot</button><button
+                        onclick="selectNumber(97)">97 Dot</button><button onclick="selectNumber(98)">98
+                        Dot</button><button onclick="selectNumber(99)">99 Dot</button><button
+                        onclick="selectNumber(100)">100 Dot</button>
+
+                    <!-- button[onclick="selectNumber($)"]*100>{$ Dot} -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-drag__block">
+            <div class="section-drag__img">
+                <img id="image" src="img/img-bg-2.jpg" alt="No Image" />
+
+                <div class="section-drag__inner">
+                    <div id="dots" class="section-drag__dots">
+                        <div class="section-drag__dot dot--1">
+                            1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-drag__block">
+
+            <div class="section-drag-data__inner">
+                <div class="section-drag-data__title">
+                    Dots data:
+                </div>
+
+                <div class="section-drag-data__btn">
+                    <button class="button" id="getData">
+                        Get Position Dots
+                    </button>
+                </div>
+            </div>
+
+            <div class="section-drag-data">
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<div class="alert">
+    <div class="alert__inner">
+        <div class="alert__text">
+            Successfully Copied Data
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div class="section-drag-data__list-item-wrap">
+    <div class="section-drag-data__list-item-num">
+        ${dotNumber}
+    </div>
+    <div class="section-drag-data__list-item-position">
+        <button onclick="copyText('dataToCopy${blockCountClass}')" class="position">
+            <div class="position__title">
+                Top:
+            </div>
+            <div id="dataToCopy${blockCountClass}" class="position__num">
+                ${top}
+            </div>
+        </button>
+        <button onclick="copyText('dataToCopy${blockCountClassTwo}')" class="position">
+            <div class="position__title">
+                Left:
+            </div>
+            <div id="dataToCopy${blockCountClassTwo}" class="position__num">
+                ${left}
+            </div>
+        </button>
+    </div>
+</div>
+<div id="dataToCopy${blockCountClassAll}" class="section-drag-data__all">
+    ${top} ${left}
+</div>
+<button class="btn-copy" onclick="copyText('dataToCopy${blockCountClassAll}')">
+    <span>
+        Copy All
+    </span>
+    <svg>
+        <use xlink:href="img/sprite.svg#icon-copy"></use>
+    </svg>
+</button> -->
+	
+	<footer class="footer">
+    <div class="author">
+        <span id="year"></span> © copyright maxuiux DRAG-DOTS
+    </div>
+    <div class="footer__info">
+        DRAG-DOTS - CSS Toolkit Position Dots
+    </div>
+</footer>
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+</body>
+
+</html>
