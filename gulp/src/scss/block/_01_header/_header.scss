@@ -1,0 +1,64 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9000;
+    overflow: hidden;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(#EEEEEE, 0.8);
+        backdrop-filter: blur(15px);
+        padding: 10px 20px;
+        height: 55px;
+        border-bottom: 1px solid rgba(#DDDDDD, 0.5);
+
+        svg,
+        img {
+            display: flex;
+            transform: scale(1);
+            transition: 0.12s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        a {
+            &:hover {
+
+                svg,
+                img {
+                    transform: scale(0.98);
+                }
+            }
+        }
+
+        .logo {
+            border-radius: 50%;
+
+            svg {
+                width: 35px;
+                height: 35px;
+                color: #28C065;
+            }
+        }
+
+        .brand {
+            svg {
+                color: #28C065;
+                height: 20px;
+            }
+        }
+
+        .boosty {
+            height: 55px;
+
+            img {
+                display: flex;
+                width: auto;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
